@@ -1,0 +1,10 @@
+[28-Apr-2023 05:31:25 UTC] PHP Warning:  require(/home/wrteamin/public_html/testbrokerhub/public/../vendor/autoload.php): Failed to open stream: No such file or directory in /home/wrteamin/public_html/testbrokerhub/public/index.php on line 36
+[28-Apr-2023 05:31:25 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/wrteamin/public_html/testbrokerhub/public/../vendor/autoload.php' (include_path='.:/opt/cpanel/ea-php81/root/usr/share/pear') in /home/wrteamin/public_html/testbrokerhub/public/index.php:36
+Stack trace:
+#0 {main}
+  thrown in /home/wrteamin/public_html/testbrokerhub/public/index.php on line 36
+[28-Apr-2023 05:31:26 UTC] PHP Warning:  require(/home/wrteamin/public_html/testbrokerhub/public/../vendor/autoload.php): Failed to open stream: No such file or directory in /home/wrteamin/public_html/testbrokerhub/public/index.php on line 36
+[28-Apr-2023 05:31:26 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/wrteamin/public_html/testbrokerhub/public/../vendor/autoload.php' (include_path='.:/opt/cpanel/ea-php81/root/usr/share/pear') in /home/wrteamin/public_html/testbrokerhub/public/index.php:36
+Stack trace:
+#0 {main}
+  thrown in /home/wrteamin/public_html/testbrokerhub/public/index.php on line 36

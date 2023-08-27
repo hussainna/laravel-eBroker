@@ -1,0 +1,315 @@
+  * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+  }
+
+  /* body {
+                                                                                                                            background-color: #fff;
+                                                                                                                        } */
+
+  .container {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+  }
+
+  h1 {
+      display: block;
+      text-align: center;
+      margin: 20px;
+  }
+
+  h2 {
+      display: block;
+      text-align: center;
+      margin: 20px;
+  }
+
+  /*********************
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                *   BUTTONS CONFIG    *
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                **********************/
+
+  .btn1 {
+      display: inline-block;
+      height: 50px;
+      width: 140px;
+      color: #000;
+      padding-top: 15px;
+      text-align: center;
+  }
+
+  .btn1:link,
+  .btn1:visited {
+      text-transform: uppercase;
+      text-decoration: none;
+  }
+
+  ************************/ .input-btn1 {
+      display: inline-block;
+      height: 50px;
+      width: 140px;
+      margin: 20px;
+      text-transform: uppercase;
+      outline: none;
+  }
+
+  .input-btn1-ghost {
+      background-color: transparent;
+      border: 1px #000;
+      border-style: solid;
+  }
+
+  .input-btn1-ghost:hover {
+      cursor: pointer;
+      background-color: #2980b9;
+      color: #fff;
+      border-color: #fff;
+      transition: .4s linear;
+  }
+
+  .input-btn1-ghost:active {
+      background-color: #3498db;
+      transition: .2s ease-out;
+      color: #fff;
+      border-color: #fff;
+  }
+
+  .input-btn1-ghost-rounded {
+      border-radius: 5px;
+  }
+
+  .input-btn1-ghost-cicle {
+      border-radius: 50px;
+  }
+
+  .input-btn1-ghost-dashed {
+      width: 25%;
+      background-color: transparent;
+      border: 1px #000;
+      border-style: dashed;
+      height: 75%;
+  }
+
+  .input-btn1-ghost-dashed:hover {
+      background-color: transparent;
+      border: 2px #000;
+      border-style: dashed;
+      transition: .2s linear;
+      cursor: pointer;
+  }
+
+
+  .input-btn1-ghost-dashed:active {
+      background-color: #2980b9;
+      border-color: #2980b9;
+      color: #fff;
+      transition: .1s ease;
+  }
+
+  @import url('https://fonts.googleapis.com/css?family=Nunito+Sans&display=swap');
+
+  :root {
+      --primary-color: #087C7C;
+      --bg-color: #dfe6e9;
+      --text-color: black;
+  }
+
+  .body1 {
+      background: var(--bg-color);
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: 'Nunito Sans', sans-serif;
+  }
+
+  .container1 {
+      margin-left: 5%;
+      width: 27%;
+      background: white;
+      cursor: pointer;
+      border-radius: 15px;
+      position: relative;
+      padding: 8px 5px;
+      color: black;
+      border-color: #087C7C;
+      border-style: double;
+      text-align: center;
+      align-content: center;
+  }
+
+  .container1::after {
+      content: '';
+
+      color: var(--text-color);
+
+      background: var(--primary-color);
+      border-radius: 15px;
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      left: 0;
+      top: 0;
+      z-index: 0;
+      clip-path: circle(10% at 0% 0%);
+      transition: all .3s ease-in;
+
+  }
+
+  .content1 {
+      position: relative;
+      z-index: 1;
+      transition: all .3s ease-in;
+  }
+
+  .container1:hover::after {
+
+      clip-path: circle(100%);
+
+
+  }
+
+  .container1:hover .content {
+      color: var(--text-color);
+  }
+
+  /* filepond multiple images  */
+  .multi_img .filepond--item {
+      width: calc(50% - .5em);
+  }
+
+  @media (max-width: 767px) {
+      .multi_img .filepond--item {
+          width: 100%;
+      }
+  }
+
+  #loader-container {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(255, 255, 255, 0.8);
+      z-index: 9999;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+
+
+
+  .loader {
+      animation: rotate 1s infinite;
+      height: 50px;
+      width: 50px;
+  }
+
+  .loader:before,
+  .loader:after {
+      content: "";
+      display: block;
+      height: 20px;
+      width: 20px;
+  }
+
+  .loader:before {
+      animation: box1 1s infinite;
+      background-color: #fff;
+      box-shadow: 30px 0 0 #087C7C;
+      margin-bottom: 10px;
+  }
+
+  .loader:after {
+      animation: box2 1s infinite;
+      background-color: #087C7C;
+      box-shadow: 30px 0 0 #fff;
+  }
+
+  @keyframes rotate {
+      0% {
+          transform: rotate(0deg) scale(0.8)
+      }
+
+      50% {
+          transform: rotate(360deg) scale(1.2)
+      }
+
+      100% {
+          transform: rotate(720deg) scale(0.8)
+      }
+  }
+
+  @keyframes box1 {
+      0% {
+          box-shadow: 30px 0 0 #087C7C;
+      }
+
+      50% {
+          box-shadow: 0 0 0 #087C7C;
+          margin-bottom: 0;
+          transform: translate(15px, 15px);
+      }
+
+      100% {
+          box-shadow: 30px 0 0 #087C7C;
+          margin-bottom: 10px;
+      }
+  }
+
+  @keyframes box2 {
+      0% {
+          box-shadow: 30px 0 0 #fff;
+      }
+
+      50% {
+          box-shadow: 0 0 0 #fff;
+          margin-top: -20px;
+          transform: translate(15px, 15px);
+      }
+
+      100% {
+          box-shadow: 30px 0 0 #fff;
+          margin-top: 0;
+      }
+  }
+
+  .card1 {
+      position: relative;
+      display: inline-block;
+      width: 100%;
+      max-width: 350px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      overflow: hidden;
+      height: 50%;
+  }
+
+  .card1-img {
+      display: block;
+      height: 100%;
+      width: 100%;
+
+  }
+
+  .RemoveBtn1 {
+      position: absolute;
+      top: 0px;
+      right: -2px;
+      background-color: #f0eae9;
+      color: rgb(10, 9, 9);
+      border: none;
+      /* border-radius: 7%; */
+      padding: 5px;
+      font-size: 15px;
+  }
+
+
+  @media (max-width: 768px) {
+      .card1 {
+          max-width: 100%;
+          margin-bottom: 20px;
+      }
+  }
